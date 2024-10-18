@@ -2,15 +2,21 @@
 @import url(/styles/reset.css);
 @import url(/styles/header.css);
 @import url(/styles/banner.css);
-:root{
+@import url(/styles/carrossel.css);
+@import url(/styles/topicos.css);
+@import url(/styles/contato.css);
+@import url(/styles/rodape.css);
+:root {
     --cor-principal: #EBECEE;
     --cor-secundaria: #ffffff;
     --cor-terciaria: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    --cor-terciaria-tipo-fonte: #002F52;
     --destaque: #EB9B00;
     --fonte-principal: "Poppins", sans-serif;
 }
-body{
+body {
     background-color: var(--cor-principal);
     font-family:var(--fonte-principal);
     font-size: 1rem;
+    box-sizing: border-box;
 }
