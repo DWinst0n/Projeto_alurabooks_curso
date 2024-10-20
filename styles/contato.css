@@ -16,11 +16,11 @@
 .contato__email{
     background: transparent;
     border: 1px solid var(--cor-terciaria-tipo-fonte);
-    width: 90%;
+    width: 75%;
     border-radius: 1.5em;
     align-items: center;
     padding: 1em;
-    margin-left: 2em;
+    margin: 1em;
 }
 .contato__email::placeholder{
     background: url(/img/Email.svg) no-repeat;
@@ -30,10 +30,15 @@
     font-weight: 400;
     text-align: center;
 }
-
+.contato__descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 @media screen and (min-width:1024px){
     .contato__descricao{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 2em;
