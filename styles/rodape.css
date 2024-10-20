@@ -41,3 +41,14 @@ hr {
         margin: 0.6em 0;
     }
 }
+
+@media screen and (min-width:1024px){
+    .rodape{
+        padding: 3em 0;
+        justify-content: space-around;
+    }
+    .lista__rodape{
+        border-left: 1px solid var(--cor-tipo-fonte-secundaria);
+        padding-left: 1em;
+    }
+}

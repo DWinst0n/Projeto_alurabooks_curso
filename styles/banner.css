@@ -3,21 +3,19 @@
     color: var(--cor-secundaria);
     text-align: center;
     padding: 2.5em 2em;
-    
 }
 .banner__pesquisa {
     background: transparent;
     border: 1px solid var(--cor-secundaria);
     color: var(--cor-secundaria);
-    width: 100%;
+    width: 90%;
     border-radius: 1.5em;
     align-items: center;
     padding: 1em;
 }
 .banner__pesquisa::placeholder {
     background: url(/img/Lupa.svg) no-repeat;
-    background-position: 0.25em;
-    left: 100%;
+    background-position: left;
     color: var(--cor-secundaria);
     font-family: var(--fonte-principal);
     font-weight: 400;
@@ -32,11 +30,27 @@
     margin: 1em 0;
 }
 
-@media screen and (min-width: 674px){
-    .banner__titulo {
-        font-size: 2.25rem
-    }
+@media screen and (min-width: 655px){
+        .banner__titulo {
+            font-size: 2.25rem;
+        }
+    
+        .banner__pesquisa {
+            width: calc(50% - 1.5em);
+        }
+    
+        .banner__pesquisa::placeholder {
+            background-position: left;
+        }
+}
+@media screen and (min-width: 1250px){
     .banner__pesquisa {
-        width: 50%;
+        width: calc(35% - 1em);
+    }
+    .banner__pesquisa::placeholder {
+        background-position: left;
+    }
+    .banner{
+        padding: 6em 0;
     }
 }

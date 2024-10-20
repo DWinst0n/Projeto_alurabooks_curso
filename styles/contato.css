@@ -44,3 +44,8 @@
         margin-left: 2em;
     }    
 }
+@media screen and (min-width:1500px) {
+    .contato__descricao{
+        padding: 3em 25vw;
+    }
+}

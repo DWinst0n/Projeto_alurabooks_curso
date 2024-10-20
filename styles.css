@@ -23,5 +23,6 @@ body {
     background-color: var(--cor-principal);
     font-family:var(--fonte-principal);
     font-size: 1rem;
+    width:100vw;
     box-sizing: border-box;
 }

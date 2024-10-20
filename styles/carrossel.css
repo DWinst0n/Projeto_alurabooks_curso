@@ -67,6 +67,13 @@
 .descricao__imagem{
     height: 100%;
 }
+.botoes__ancora:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--destaque);
+    border: 1px solid var(--destaque);
+    border-radius: 8px;
+    font-weight: 700;
+}
 @media screen and (min-width:700px) {
     .carrossel__titulo {
         font-size: 1.625rem;
@@ -84,5 +91,31 @@
     .card{
         width: 45%;
         margin: 2em auto;
+    }
+}
+@media screen and (min-width:1500px) {
+    .carrossel__container{
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+    .swiper-pagination {
+        margin: 1em 0; 
+    }
+    .swiper{
+        width:50%
+    }
+    .descricao{
+        margin-right: 1em;
+    }
+    .descricao__titulo{
+        font-size: 2rem;
+    }
+    .descricao__texto{
+        font-size: 1rem;
+    }
+    .card{
+        width: 60% auto;
+        margin-left: 3em
     }
 }

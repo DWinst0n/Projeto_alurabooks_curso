@@ -6,12 +6,23 @@
     background-position: center;
     display: inline-block;
 }
+.container__rotulo{
+    padding: 1em;
+
+}
+.container__botao:checked~.container__rotulo>.cabecalho__menu__hamburguer{
+    background-image: url(/img/Menu\ Aberto.svg);
+}
+.container__botao:checked~.container__rotulo{
+    background: var(--cor-terciaria);
+} 
 .cabecalho {
     background-color: var(--cor-secundaria);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding: 0em 1em;
 }
 .container {
     display: flex;
@@ -47,16 +58,14 @@
     padding: 2em;
     background-color: var(--cor-secundaria);
 }
+
 .lista-menu__titulo {
     color:var(--destaque);
     font-weight: 700;
 }
 .lista-menu__link {
     text-decoration: none;
-    background: var(--cor-terciaria);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--cor-terciaria-tipo-fonte);
     text-transform:uppercase;
 }
 .container__titulo{
@@ -64,6 +73,9 @@
 }
 .opcoes{
     display: none;
+}
+.container__texto{
+    display: none
 }
 
 @media screen and (min-width: 975px){
@@ -103,6 +115,45 @@
     }
     .lista-menu-opcoes__item {
         padding: 2em;
+        margin: 0;
         background-color: var(--cor-secundaria);
     }
+    .opcoes-menu__botao:checked~.opcoes__rotulo>.opcoes__item{
+        background: var(--cor-terciaria);
+        color: var(--cor-secundaria);
+    
+    }
+    .opcoes__item{
+        padding: 2em 1em;
+    }
+    .lista-menu-opcoes__item:hover{
+        background: var(--cor-terciaria);
+    }
+    .lista-menu-opcoes__item:hover>.lista-menu__link {
+        -webkit-text-fill-color: var(--cor-secundaria);
+    }
+    .opcoes__item:hover{
+        background: var(--cor-terciaria);
+    }
+    .opcoes__rotulo:hover,.opcoes__item:hover>.opcoes__link{
+        color: var(--cor-secundaria);
+    }
+}
+    @media screen and (min-width:1500px){
+        .cabecalho{
+            padding: 0 2em;
+        }
+        .container__texto{
+            display:block;
+        }
+        .container__link{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: var(--cor-tipo-fonte);
+            font-size: 1.25rem;
+        }
+        .opcoes{
+            margin-right: auto;
+        }
 }
