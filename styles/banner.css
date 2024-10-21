@@ -14,7 +14,7 @@
     padding: 1em;
 }
 .banner__pesquisa::placeholder {
-    background: url(/img/Lupa.svg) no-repeat;
+    background: url(img/Lupa.svg) no-repeat;
     background-position: left;
     color: var(--cor-secundaria);
     font-family: var(--fonte-principal);

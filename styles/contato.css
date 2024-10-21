@@ -23,7 +23,7 @@
     margin: 1em;
 }
 .contato__email::placeholder{
-    background: url(/img/Email.svg) no-repeat;
+    background: url(img/Email.svg) no-repeat;
     background-position: 1em;
     color: var(--cor-terciaria-tipo-fonte);
     font-family: var(--fonte-principal);
